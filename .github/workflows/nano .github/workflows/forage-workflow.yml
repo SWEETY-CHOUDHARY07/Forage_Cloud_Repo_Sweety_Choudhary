@@ -1,0 +1,16 @@
+
+
+name: Forage Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Say Hello
+        run: echo "Hello, Sweety! GitHub Actions is running successfully."
+
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
